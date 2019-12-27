@@ -1,0 +1,50 @@
+.home {
+  height: 100vh;
+  width: 100vw;
+  background-color: #1f2833;
+}
+
+.home__h1 {
+  color: #66fcf1;
+  font-size: 3.313rem;
+  font-weight: 700;
+}
+
+.home__p {
+  color: #ffffff;
+  font-size: 2.125rem;
+}
+
+.home__button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+@media (min-width: 576px) {
+  .home__h1 {
+    font-size: 4.313rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .home__h1 {
+    font-size: 6.313rem;
+  }
+  .home__p {
+    font-size: 3.125rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .home__h1 {
+    font-size: 8.313rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .home__h1 {
+    font-size: 10.313rem;
+  }
+}
+/*# sourceMappingURL=Home.css.map */
