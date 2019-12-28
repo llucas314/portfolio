@@ -2,7 +2,6 @@ import React from "react";
 import "./Home.css";
 import { Link } from "react-scroll";
 import { ButtonIcon } from "../../Icons";
-import Project from "../../components/Project/Project";
 export default function Home() {
   return (
     <main
@@ -24,7 +23,6 @@ export default function Home() {
           >
             <ButtonIcon />
           </Link>
-          <Project />
         </div>
       </div>
     </main>

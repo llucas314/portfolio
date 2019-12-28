@@ -1,0 +1,31 @@
+.project {
+  //   width: 513px;
+  height: 302px;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  &:hover .project__modal,
+  :active .project__modal {
+    transform: translateY(0);
+  }
+}
+.project__h1 {
+  color: #1f2833;
+  font-weight: 600;
+}
+
+.project__modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(-100%);
+  //   width: 513px;
+  height: 302px;
+  background-color: #66fcf2c4;
+  transition: all 200ms linear;
+}
+.project__link-img {
+  width: 32px;
+  height: 32px;
+}

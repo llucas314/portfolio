@@ -1,1 +1,36 @@
-/* No CSS *//*# sourceMappingURL=Project.css.map */
+.project {
+  height: 302px;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.project:hover .project__modal,
+.project :active .project__modal {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.project__h1 {
+  color: #1f2833;
+  font-weight: 600;
+}
+
+.project__modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  height: 302px;
+  background-color: #66fcf2c4;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+.project__link-img {
+  width: 32px;
+  height: 32px;
+}
+/*# sourceMappingURL=Project.css.map */
