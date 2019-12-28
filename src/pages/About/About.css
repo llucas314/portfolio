@@ -10,8 +10,19 @@
      object-fit: cover;
 }
 
+.about__h1 {
+  font-weight: 700;
+  color: #1f2833;
+}
+
 .about__bio-text {
   width: 21.375rem;
+  color: #1f2833;
+}
+
+.about__main {
+  -webkit-transform: translateY(-15%);
+          transform: translateY(-15%);
 }
 
 @media (min-width: 576px) {
@@ -27,10 +38,13 @@
 
 .about__footer {
   position: absolute;
+  top: 175vh;
   width: 100%;
   height: 25vh;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: top;
+  color: #1f2833;
 }
 
 @media (min-width: 768px) {
@@ -55,12 +69,17 @@
 }
 
 @media (min-width: 1200px) {
-  .about__image {
-    width: 21.375rem;
-    height: 21.375rem;
-  }
   .about__bio-text {
-    width: 58rem;
+    width: 55rem;
+    font-size: 1.6rem;
+  }
+  .about__h1 {
+    font-size: 6.25rem;
+  }
+  .about__footer {
+    height: 25vh;
+  }
+  .about__h3 {
     font-size: 2.188rem;
   }
 }
