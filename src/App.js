@@ -2,13 +2,15 @@ import React from "react";
 import "./App.css";
 import Navigation from "./components/Navigation/Navigation";
 import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
 
 function App() {
   return (
-    <>
-      <Home />
+    <div>
       <Navigation />
-    </>
+      <Home />
+      <About />
+    </div>
   );
 }
 

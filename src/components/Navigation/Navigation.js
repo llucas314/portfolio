@@ -17,7 +17,12 @@ const Navigation = props => {
 
   return (
     <div>
-      <Navbar color="light" light expand="md" className="navigation">
+      <Navbar
+        color="light"
+        light
+        expand="md"
+        className="navigation container-fluid"
+      >
         <NavbarBrand href="/">Lorenzo Lucas</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>

@@ -14,7 +14,7 @@ export default function Home() {
           <p className="home__p text-center">Software Engineer</p>
           <Link
             activeClass="active"
-            to="home"
+            to="about"
             spy={true}
             smooth={true}
             offset={0}

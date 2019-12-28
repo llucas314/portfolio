@@ -1,5 +1,7 @@
 .navbar {
   background-color: #45a29e !important;
+  position: fixed !important;
+  top: 0;
 }
 .navbar-expand-md .navbar-collapse {
   justify-content: center;
@@ -12,7 +14,7 @@ a.nav-link.nav-item {
 }
 @media only screen and (min-width: 768px) {
   .navbar {
-    height: 5.313rem;
+    height: 11.5vh;
   }
   .navbar-brand {
     position: absolute;
