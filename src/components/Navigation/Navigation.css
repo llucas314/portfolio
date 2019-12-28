@@ -2,6 +2,7 @@
   background-color: #45a29e !important;
   position: fixed !important;
   top: 0;
+  z-index: 100;
 }
 
 .navbar-expand-md .navbar-collapse {

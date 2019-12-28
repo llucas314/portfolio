@@ -1,7 +1,9 @@
 import React from "react";
 import "./About.css";
 import image from "../../assets/GA14Nov-WebSized_NoCrop-11.jpg";
-import { BorderDesign } from "../../Icons";
+import desktop from "../../assets/desktop.png";
+import mobile from "../../assets/mobile.png";
+import website from "../../assets/website.png";
 import borderDesign from "../../assets/backgroundImage.png";
 export default function About() {
   return (
@@ -28,11 +30,28 @@ export default function About() {
         </main>
       </div>
       <div
-        className="about__footer "
+        className="about__footer d-flex flex-column justify-content-start align-items-center"
         style={{ backgroundImage: `url(${borderDesign})` }}
       >
         <h3 className="about__h3 text-center">WHAT I DO</h3>
-        <div className="about__icons"></div>
+        <div className="about__icons d-flex justify-content-between">
+          <div className="about__icon-container  d-flex flex-column align-items-center justify-content-center">
+            <img src={desktop} alt="icon" id="desktop" />
+            <p className="about__icon-description text-center m-0">
+              Desktop Apps
+            </p>
+          </div>
+          <div className="about__icon-container  d-flex flex-column align-items-center justify-content-center ">
+            <img src={mobile} alt="icon" id="mobile" />
+            <p className="about__icon-description text-center m-0">
+              Mobile Apps
+            </p>
+          </div>
+          <div className="about__icon-container d-flex flex-column align-items-center justify-content-center">
+            <img src={website} alt="icon" id="website" />
+            <p className="about__icon-description text-center m-0">Websites</p>
+          </div>
+        </div>
       </div>
     </div>
   );
