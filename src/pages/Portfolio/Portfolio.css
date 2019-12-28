@@ -1,4 +1,10 @@
 .portfolio {
   height: 100vh;
 }
+
+.portfolio__h1 {
+  color: #1f2833;
+  font-size: 6.25rem;
+  font-weight: 700;
+}
 /*# sourceMappingURL=Portfolio.css.map */
