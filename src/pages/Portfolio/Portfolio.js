@@ -15,14 +15,14 @@ export default function Portfolio() {
       className="portfolio d-flex flex-column justify-content-center align-items-center"
       id="portfolio"
     >
-      <div className="portfolio__h1">PORTFOLIO</div>
+      <h1 className="portfolio__h1 p-5 ">PORTFOLIO</h1>
       <div className="container">
-        <div className="row">
-          <div className=" col-12 d-flex flex-column flex-lg-row">
+        <div className="row justify-content-center">
+          <div className=" col-11 col-lg-12 d-flex flex-column flex-lg-row">
             <Project
               title="The Calluna"
               img={calluna}
-              description="A mockup of a luxury hotel's webpage."
+              description="A mockup of a luxury hotel's webpage. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. U"
               link="https://llucas314.github.io/Website-Mockup/"
               github="https://github.com/llucas314/Website-Mockup"
             />
@@ -42,8 +42,8 @@ export default function Portfolio() {
             />
           </div>
         </div>
-        <div className="row">
-          <div className=" col-12 d-flex flex-column flex-lg-row">
+        <div className="row justify-content-center">
+          <div className=" col-11 col-lg-12 d-flex flex-column flex-lg-row">
             <Project
               title="Simon"
               img={simon}
