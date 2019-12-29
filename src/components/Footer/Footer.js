@@ -24,8 +24,12 @@ export default function Footer() {
         >
           <LinkedinInBrands width={"32px"} height={"32px"} fill={"#ffffff"} />
         </a>
-        <a href={resume} download>
-          <Button className="link">Resume</Button>
+        <a
+          href={resume}
+          download
+          className="footer__resume btn btn-outline-info m-2"
+        >
+          Resume
         </a>
       </div>
       <p className="footer__p">LORENZO LUCAS ©2020</p>

@@ -2,6 +2,7 @@
   min-height: 100vh;
   background-color: #1f2833;
   position: relative;
+  width: 100vw;
 }
 .contact__h1 {
   color: #66fcf1;
@@ -16,9 +17,6 @@
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-  .portfolio {
-    height: 100vh;
-  }
 }
 
 // Extra large devices (large desktops, 1200px and up)

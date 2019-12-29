@@ -1,6 +1,7 @@
 .about {
   height: 100vh;
   background-color: #c5c6c7;
+  width: 100vw;
 }
 
 .about__image {

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Button, Form, FormGroup, Input } from "reactstrap";
 import "./Form.css";
 import emailjs from "emailjs-com";
-import Snackbar from "../../Snackbar/Snackbar";
+import Snackbar from "../Snackbar/Snackbar";
 const ContactForm = props => {
   const [values, setValues] = useState({
     name: "",

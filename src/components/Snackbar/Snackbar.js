@@ -10,9 +10,11 @@ const Snackbar = props => {
       color="info"
       isOpen={isOpen}
       toggle={onDismiss}
-      className="snackbar m-3"
+      className="snackbar m-3 text-center"
     >
-      Your message has been sent. Thank you for checking out my portfolio!
+      Your message has been sent.
+      <br />
+      Thank you for checking out my portfolio!
     </Alert>
   );
 };
