@@ -59,7 +59,7 @@ const Navigation = props => {
                 to="portfolio"
                 spy={true}
                 smooth={true}
-                offset={-70}
+                offset={0}
                 duration={500}
                 className="nav-item nav-link"
               >
@@ -67,13 +67,12 @@ const Navigation = props => {
               </Link>
             </NavItem>
             <NavItem>
-              {" "}
               <Link
                 activeClass="active"
                 to="contact"
                 spy={true}
                 smooth={true}
-                offset={-70}
+                offset={0}
                 duration={500}
                 className="nav-item nav-link"
               >

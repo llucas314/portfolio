@@ -4,7 +4,7 @@ import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 import { DarkArrow, GithubBrands } from "../../Icons";
 
 const ProjectModal = props => {
-  const { buttonLabel, className, img, title, description } = props;
+  const { className, img, title, description, link, github } = props;
 
   const [modal, setModal] = useState(false);
 
@@ -27,8 +27,12 @@ const ProjectModal = props => {
           <h1 className="modal__h1">{title}</h1>
           <p className="modal__p">{description}</p>
           <div className="modal__buttons d-flex justify-content-center align-items-center">
-            <button className="modal__button m-2">VISIT</button>
-            <GithubBrands width={"32px"} height={"32px"} className="m-2" />
+            <a href={link} target="_blank" rel="noopener noreferrer">
+              <button className="modal__button m-2">VISIT</button>
+            </a>
+            <a href={github} target="_blank" rel="noopener noreferrer">
+              <GithubBrands width={"32px"} height={"32px"} className="m-2" />
+            </a>
           </div>
         </ModalFooter>
       </Modal>

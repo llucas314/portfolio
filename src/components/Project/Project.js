@@ -11,7 +11,14 @@ export default function Project(props) {
       <div className="project__modal  p-0  d-flex flex-column justify-content-center align-items-center">
         <h1 className="project__h1">{props.title}</h1>
         <div className="project__links d-flex justify-content-center align-items-center">
-          <ProjectModal img={props.img} className="modal" title={props.title} description="A web site that searches Spotify’s API for artists’ info." />
+          <ProjectModal
+            img={props.img}
+            className="modal"
+            title={props.title}
+            description={props.description}
+            link={props.link}
+            github={props.github}
+          />
         </div>
       </div>
     </div>
