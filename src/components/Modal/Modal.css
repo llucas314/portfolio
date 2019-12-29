@@ -1,0 +1,20 @@
+.modal__body {
+  height: 312px;
+  background-size: cover;
+  background-position: center;
+}
+
+.modal__footer {
+  background-color: #edf0f0;
+  height: 139px;
+}
+
+.modal__h1 {
+  color: #45a29e;
+  font-weight: 600;
+}
+
+.modal__p {
+  color: #1f2833;
+}
+/*# sourceMappingURL=Modal.css.map */
