@@ -1,6 +1,8 @@
 import React from "react";
 import "./Footer.css";
 import { GithubBrands, LinkedinInBrands } from "../../Icons";
+import { Button } from "reactstrap";
+import resume from "../../assets/LucasResumeDec19.pdf";
 
 export default function Footer() {
   return (
@@ -21,6 +23,9 @@ export default function Footer() {
           className="m-2"
         >
           <LinkedinInBrands width={"32px"} height={"32px"} fill={"#ffffff"} />
+        </a>
+        <a href={resume} download>
+          <Button className="link">Resume</Button>
         </a>
       </div>
       <p className="footer__p">LORENZO LUCAS ©2020</p>
