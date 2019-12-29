@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,MAAM,CAAC;EACL,QAAQ,EAAE,mBAAmB;EAC7B,MAAM,EAAE,IAAI;EACZ,IAAI,EAAE,CAAC;EACP,KAAK,EAAE,CAAC;EACR,WAAW,EAAE,MAAM;CACpB",
+    "sources": [
+        "Snackbar.scss"
+    ],
+    "names": [],
+    "file": "Snackbar.css"
+}

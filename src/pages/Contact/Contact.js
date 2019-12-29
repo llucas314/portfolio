@@ -1,6 +1,7 @@
 import React from "react";
 import "./Contact.css";
 import ContactForm from "../../components/Form/Form";
+import Footer from "../../components/Footer/Footer";
 
 export default function Contact() {
   return (
@@ -10,6 +11,7 @@ export default function Contact() {
     >
       <h1 className="contact__h1">CONTACT</h1>
       <ContactForm />
+      <Footer />
     </div>
   );
 }

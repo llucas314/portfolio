@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Button, Form, FormGroup, Input } from "reactstrap";
 import "./Form.css";
 import emailjs from "emailjs-com";
+import Snackbar from "../../Snackbar/Snackbar";
 const ContactForm = props => {
   const [values, setValues] = useState({
     name: "",
@@ -9,9 +10,11 @@ const ContactForm = props => {
     subject: "",
     message: ""
   });
+  const [visible, setVisible] = useState(false);
+  const isOpen = () => setVisible(true);
+  const onDismiss = () => setVisible(false);
   const handleSubmit = e => {
     e.preventDefault();
-
     let templateParams = {
       sender: values.name,
       from_name: values.email,
@@ -28,6 +31,7 @@ const ContactForm = props => {
       .then(
         result => {
           console.log(result.text);
+          isOpen();
         },
         error => {
           console.log(error.text);
@@ -56,6 +60,7 @@ const ContactForm = props => {
           className="contact-form__input"
           value={values.name}
           onChange={handleInputChange}
+          required
         />
       </FormGroup>
       <FormGroup>
@@ -67,6 +72,7 @@ const ContactForm = props => {
           className="contact-form__input"
           value={values.email}
           onChange={handleInputChange}
+          required
         />
       </FormGroup>
       <FormGroup>
@@ -78,6 +84,7 @@ const ContactForm = props => {
           className="contact-form__input"
           value={values.subject}
           onChange={handleInputChange}
+          required
         />
       </FormGroup>
       <FormGroup>
@@ -89,9 +96,11 @@ const ContactForm = props => {
           className="contact-form__input"
           value={values.message}
           onChange={handleInputChange}
+          required
         />
       </FormGroup>
       <Button type="submit">Submit</Button>
+      <Snackbar isOpen={visible} onDismiss={onDismiss} />
     </Form>
   );
 };

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Modal.css";
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
+import { Modal, ModalBody, ModalFooter } from "reactstrap";
 import { DarkArrow, GithubBrands } from "../../Icons";
 
 const ProjectModal = props => {
@@ -31,7 +31,12 @@ const ProjectModal = props => {
               <button className="modal__button m-2">VISIT</button>
             </a>
             <a href={github} target="_blank" rel="noopener noreferrer">
-              <GithubBrands width={"32px"} height={"32px"} className="m-2" />
+              <GithubBrands
+                width={"32px"}
+                height={"32px"}
+                className="m-2"
+                fill={"#45A29E"}
+              />
             </a>
           </div>
         </ModalFooter>
