@@ -1,0 +1,22 @@
+.contact {
+  min-height: 100vh;
+  background-color: #1f2833;
+}
+
+.contact__h1 {
+  color: #66fcf1;
+  font-weight: 700;
+}
+
+@media (min-width: 992px) {
+  .portfolio {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact__h1 {
+    font-size: 6.25rem;
+  }
+}
+/*# sourceMappingURL=Contact.css.map */
