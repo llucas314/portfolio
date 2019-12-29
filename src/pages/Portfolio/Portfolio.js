@@ -7,7 +7,6 @@ import superBowl from "../../assets/super-bowl.png";
 import doggy from "../../assets/doggy-styles.png";
 import simon from "../../assets/simon.png";
 import national from "../../assets/parks.png";
-import { Container, Row } from "reactstrap";
 
 export default function Portfolio() {
   return (

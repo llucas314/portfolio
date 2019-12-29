@@ -1,9 +1,52 @@
-import React from "react";
-import { Button, Form, FormGroup, Label, Input, FormText } from "reactstrap";
+import React, { useState } from "react";
+import { Button, Form, FormGroup, Input } from "reactstrap";
 import "./Form.css";
+import emailjs from "emailjs-com";
 const ContactForm = props => {
+  const [values, setValues] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: ""
+  });
+  const handleSubmit = e => {
+    e.preventDefault();
+
+    let templateParams = {
+      sender: values.name,
+      from_name: values.email,
+      subject: values.subject,
+      message_html: values.message
+    };
+    emailjs
+      .send(
+        "llucas314_gmail_com",
+        "template_dI3s5ifE",
+        templateParams,
+        "user_RAMHjBfnubIflGV2keCMT"
+      )
+      .then(
+        result => {
+          console.log(result.text);
+        },
+        error => {
+          console.log(error.text);
+        }
+      );
+    resetForm();
+  };
+  const resetForm = () => {
+    setValues({ name: "", email: "", subject: "", message: "" });
+  };
+  const handleInputChange = e => {
+    const { name, value } = e.target;
+    setValues({ ...values, [name]: value });
+  };
   return (
-    <Form className="contact-form d-flex flex-column align-items-center">
+    <Form
+      className="contact-form d-flex flex-column align-items-center"
+      onSubmit={handleSubmit}
+    >
       <FormGroup>
         <Input
           type="text"
@@ -11,6 +54,8 @@ const ContactForm = props => {
           id="Name"
           placeholder="NAME"
           className="contact-form__input"
+          value={values.name}
+          onChange={handleInputChange}
         />
       </FormGroup>
       <FormGroup>
@@ -20,18 +65,33 @@ const ContactForm = props => {
           id="ContactFormEmail"
           placeholder="EMAIL"
           className="contact-form__input"
+          value={values.email}
+          onChange={handleInputChange}
+        />
+      </FormGroup>
+      <FormGroup>
+        <Input
+          type="text"
+          name="subject"
+          id="Subject"
+          placeholder="SUBJECT"
+          className="contact-form__input"
+          value={values.subject}
+          onChange={handleInputChange}
         />
       </FormGroup>
       <FormGroup>
         <Input
           type="textarea"
-          name="text"
+          name="message"
           id="ContactFormText"
           placeholder="MESSAGE"
           className="contact-form__input"
+          value={values.message}
+          onChange={handleInputChange}
         />
       </FormGroup>
-      <Button>Submit</Button>
+      <Button type="submit">Submit</Button>
     </Form>
   );
 };
