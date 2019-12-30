@@ -20,13 +20,13 @@ export default function About() {
             <article>
               <p className="about__bio-text mb-1 mb-lg-3">
                 A mentor told me the best things in life come from living
-                outside of your comfort zone, and I have lived by that principle
-                ever since. I left my friends and family, joined the Air Force,
-                traveled the world, and even flew a fighter jet. Now, I have
-                left the comfort of the military to pursue my dream of becoming
-                a software developer. I know it can be difficult, but my diverse
-                background has given me an amazing set of skills that have
-                prepared me to be flexible and thrive under pressure.
+                outside of your comfort zone, and I have lived by that
+                principle. Ever since I left my friends and family, joined the
+                Air Force, traveled the world, and even flew a fighter jet. Now,
+                I have left the comfort of the military to pursue my dream of
+                becoming a software developer. I know it can be difficult, but
+                my diverse background has given me an amazing set of skills that
+                have prepared me to be flexible and thrive under pressure.
               </p>
               <p className="about__bio-text mb-0 mb-lg-3">
                 Although I did not realize my passion for coding until later in
@@ -35,9 +35,9 @@ export default function About() {
                 find solutions to each of the problems presented to me. After I
                 was introduced to programming, I knew that I had found a career
                 that fit me perfectly. In a constantly changing industry, I am
-                continuously pushing myself outside of my comfort zone to learn
-                new languages and frameworks to become an even more skilled and
-                versatile software engineer.
+                continuously pushing myself outside of my comfort zone, learning
+                new languages and frameworks to become a versatile software
+                engineer.
               </p>
             </article>
           </div>
