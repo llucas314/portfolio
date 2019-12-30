@@ -21,7 +21,8 @@ export default function Portfolio() {
             <Project
               title="The Calluna"
               img={calluna}
-              description="A mockup of a luxury hotel's webpage. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. U"
+              description="A mockup of a luxury hotel's webpage."
+              lang="HTML | CSS "
               link="https://llucas314.github.io/Website-Mockup/"
               github="https://github.com/llucas314/Website-Mockup"
             />
@@ -29,6 +30,7 @@ export default function Portfolio() {
               title="The Music Cove"
               img={cove}
               description="A web site that searches Spotify’s API for artists’ info."
+              lang="Javascript | HTML | CSS"
               link="https://llucas314.github.io/ui-pattern-project/"
               github="https://github.com/llucas314/ui-pattern-project"
             />
@@ -36,6 +38,7 @@ export default function Portfolio() {
               title="Super Bowl Center"
               img={superBowl}
               description="A place to find information on the NFL’s largest game of the year."
+              lang="Mongo DB | Express.JS | React.JS | Node.JS (MERN)"
               link="https://eager-raman-2f4f42.netlify.com/"
               github="https://github.com/llucas314/super-bowl-react"
             />
@@ -46,14 +49,16 @@ export default function Portfolio() {
             <Project
               title="Simon"
               img={simon}
-              description="A take on the classic Hasbro game Simon."
+              description="A take on the classic Hasbro game Simon"
+              lang="Javascript | HTML | CSS"
               link="https://llucas314.github.io/simon-game/"
               github="https://github.com/llucas314/simon-game"
             />
             <Project
               title="Doggy Styles"
               img={doggy}
-              description="This site allows you to find compatile dogs by their temperaments or styles."
+              description="This site allows you to find compatible dogs by their temperaments or styles."
+              lang="Mongo DB | Express.JS | React.JS | Node.JS (MERN)"
               link="https://practical-roentgen-4bb960.netlify.com/"
               github="https://github.com/llucas314/doggy-styles-react"
             />
@@ -61,6 +66,7 @@ export default function Portfolio() {
               title="National Parks"
               img={national}
               description="A guide to National Parks in America."
+              lang="Javascript(React.JS) | CSS"
               link="https://zealous-villani-add409.netlify.com/"
               github="https://github.com/llucas314/National-Parks"
             />

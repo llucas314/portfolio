@@ -16,6 +16,7 @@ export default function Project(props) {
             className="modal"
             title={props.title}
             description={props.description}
+            lang={props.lang}
             link={props.link}
             github={props.github}
           />
