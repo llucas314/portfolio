@@ -1,5 +1,5 @@
 .project {
-  height: 284px;
+  height: 164px;
   background-size: cover;
   background-position: top;
   position: relative;
@@ -31,10 +31,15 @@
   width: 32px;
   height: 32px;
 }
+@media (min-width: 425px) {
+  .project {
+    height: 213px;
+  }
+}
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
   .project {
-    height: 303px;
+    height: 192px;
   }
 }
 

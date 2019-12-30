@@ -1,5 +1,5 @@
 .project {
-  height: 284px;
+  height: 164px;
   background-size: cover;
   background-position: top;
   position: relative;
@@ -38,9 +38,15 @@
   height: 32px;
 }
 
+@media (min-width: 425px) {
+  .project {
+    height: 213px;
+  }
+}
+
 @media (min-width: 576px) {
   .project {
-    height: 303px;
+    height: 192px;
   }
 }
 
