@@ -1,0 +1,62 @@
+.project {
+  height: 164px;
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  overflow: hidden;
+  &:hover .project__modal,
+  :active .project__modal {
+    transform: translateY(0);
+  }
+}
+.project__h1 {
+  color: #1f2833;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.project__modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(-100%);
+  width: 100%;
+  height: 100%;
+  background-color: #66fcf2c0;
+  transition: all 200ms linear;
+}
+.project__link-img {
+  width: 32px;
+  height: 32px;
+}
+@media (min-width: 425px) {
+  .project {
+    height: 213px;
+  }
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .project {
+    height: 192px;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .project {
+    height: 409px;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .project {
+    height: 194px;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}

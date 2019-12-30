@@ -1,15 +1,12 @@
 import React from "react";
 import "./About.css";
 import image from "../../assets/GA14Nov-WebSized_NoCrop-11.jpg";
-import desktop from "../../assets/desktop.png";
-import mobile from "../../assets/mobile.png";
-import website from "../../assets/website.png";
-import borderDesign from "../../assets/backgroundImage.png";
+import whatido from "../../assets/what-I-do.svg";
 export default function About() {
   return (
     <div
       id="about"
-      className="about d-flex flex-lg-row justify-content-center align-items-center"
+      className="about d-flex flex-column  justify-content-center align-items-center"
     >
       <div className="container">
         <main className="row flex-column justify-content-center align-items-center about__main">
@@ -18,41 +15,35 @@ export default function About() {
             <img
               src={image}
               alt="profile"
-              className="about__image rounded-circle p-3"
+              className="about__image rounded-circle m-3 m-lg-0 p-3"
             />
-            <p className="about__bio-text text-center mb-3">
-              Give it up for my sister! All right now. Everybody put your hands
-              together. Do we have any single ladies in the house tonight? sing
-              All the single ladies All the single ladies. Now put your hands
-              up. Up in the club. Just broke up. I’m doing my own littl
-            </p>
+            <article>
+              <p className="about__bio-text mb-1 mb-lg-3">
+                A mentor told me the best things in life come from living
+                outside of your comfort zone, and I have lived by that principle
+                ever since. I left my friends and family, joined the Air Force,
+                traveled the world, and even flew a fighter jet. Now, I have
+                left the comfort of the military to pursue my dream of becoming
+                a software developer. I know it can be difficult, but my diverse
+                background has given me an amazing set of skills that have
+                prepared me to be flexible and thrive under pressure.
+              </p>
+              <p className="about__bio-text mb-0 mb-lg-3">
+                Although I did not realize my passion for coding until later in
+                life, I’ve always been a problem solver. Whether it was a jigsaw
+                puzzle or diagnosing computer issues, I wanted and needed to
+                find solutions to each of the problems presented to me. After I
+                was introduced to programming, I knew that I had found a career
+                that fit me perfectly. In a constantly changing industry, I am
+                continuously pushing myself outside of my comfort zone to learn
+                new languages and frameworks to become an even more skilled and
+                versatile software engineer.
+              </p>
+            </article>
           </div>
         </main>
       </div>
-      <div
-        className="about__footer d-flex flex-column justify-content-start align-items-center"
-        style={{ backgroundImage: `url(${borderDesign})` }}
-      >
-        <h3 className="about__h3 text-center">WHAT I DO</h3>
-        <div className="about__icons d-flex justify-content-between">
-          <div className="about__icon-container  d-flex flex-column align-items-center justify-content-center">
-            <img src={desktop} alt="icon" id="desktop" />
-            <p className="about__icon-description text-center m-0">
-              Desktop Apps
-            </p>
-          </div>
-          <div className="about__icon-container  d-flex flex-column align-items-center justify-content-center ">
-            <img src={mobile} alt="icon" id="mobile" />
-            <p className="about__icon-description text-center m-0">
-              Mobile Apps
-            </p>
-          </div>
-          <div className="about__icon-container d-flex flex-column align-items-center justify-content-center">
-            <img src={website} alt="icon" id="website" />
-            <p className="about__icon-description text-center m-0">Websites</p>
-          </div>
-        </div>
-      </div>
+      <img src={whatido} alt="background img" className="about__background" />
     </div>
   );
 }
