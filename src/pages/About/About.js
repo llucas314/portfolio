@@ -24,18 +24,17 @@ export default function About() {
                 ever since. I left my friends and family, joined the Air Force,
                 traveled the world, and even flew a fighter jet. Now, I have
                 left the comfort of the military to pursue my dream of becoming
-                a software developer. I know it can be difficult, but my diverse
-                background has given me an amazing set of skills that have
-                prepared me to be flexible and thrive under pressure.
+                a software developer. I faced many challenges along the way but
+                my diverse background has given me an amazing set of skills that
+                have prepared me to be flexible and thrive under pressure.
               </p>
               <p className="about__bio-text mb-0 mb-lg-3">
                 Although I did not realize my passion for coding until later in
-                life, I’ve always been a problem solver. Whether it was a jigsaw
-                puzzle or diagnosing computer issues, I wanted and needed to
-                find solutions to each of the problems presented to me. After I
-                was introduced to programming, I knew that I had found a career
-                that fit me perfectly. In a constantly changing industry, I am
-                continuously pushing myself outside of my comfort zone, learning
+                life, I’ve always been a problem solver. If I was working on a
+                jigsaw puzzle or diagnosing a computer issue, I strove for
+                results. After I was introduced to programming, I knew that I
+                had found a perfect career that I would thrive in. I am
+                continuously pushing myself outside of my comfort zone to learn
                 new languages and frameworks to become a versatile software
                 engineer.
               </p>
