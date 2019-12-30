@@ -1,7 +1,8 @@
 .about {
-  height: 100vh;
+  height: 167vh;
   background-color: #c5c6c7;
   width: 100vw;
+  position: relative;
 }
 .about__image {
   width: 10.375rem;
@@ -15,6 +16,7 @@
 .about__bio-text {
   width: 21.375rem;
   color: #1f2833;
+  text-indent: 40px;
 }
 .about__main {
   transform: translateY(-15%);
@@ -33,15 +35,12 @@
   font-size: 1em;
   white-space: nowrap;
 }
-#desktop {
-  width: 65%;
+.about__background {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
 }
-#mobile {
-  width: 40%;
-}
-#website {
-  width: 65%;
-}
+
 .about__footer {
   position: absolute;
   top: 175vh;
@@ -54,6 +53,19 @@
   overflow: hidden;
 }
 
+@media (max-width: 330px) {
+  .about__image {
+    width: 10.375rem;
+    height: 10.375rem;
+  }
+  .about__bio-text {
+    width: 17rem;
+    font-size: 1rem;
+  }
+  .about {
+    height: 192vh;
+  }
+}
 @media (min-width: 576px) {
   .about__image {
     width: 12.375rem;
@@ -63,44 +75,43 @@
     width: 31.375rem;
     font-size: 1.2rem;
   }
-  #mobile {
-    width: 50%;
+  .about {
+    height: 167vh;
   }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   .about__image {
-    width: 15.375rem;
-    height: 15.375rem;
+    width: 10rem;
+    height: 10rem;
   }
   .about__bio-text {
-    width: 45.375rem;
-    font-size: 1.4rem;
+    width: 30rem;
+    font-size: 1.2rem;
+  }
+  .about {
+    height: 167vh;
   }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .about__image {
-    width: 18.375rem;
-    height: 18.375rem;
+    width: 16rem;
+    height: 16rem;
   }
   .about__bio-text {
-    width: 30.375rem;
+    width: 40rem;
+    font-size: 1rem;
   }
 
-  #desktop {
-    width: 75%;
-  }
-  #mobile {
-    width: 75%;
-  }
-  #website {
-    width: 75%;
-  }
   .about__icons {
     width: 50%;
+    transform: translate(3px, -10px);
+  }
+  .about {
+    height: 100vh;
   }
 }
 
@@ -108,7 +119,7 @@
 @media (min-width: 1200px) {
   .about__bio-text {
     width: 50rem;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
   .about__h1 {
     font-size: 6.25rem;
@@ -118,5 +129,8 @@
   }
   .about__h3 {
     font-size: 2.188rem;
+  }
+  .about__icons {
+    transform: translate(3px, -10px);
   }
 }
