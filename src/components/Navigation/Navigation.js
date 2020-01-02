@@ -25,7 +25,7 @@ const Navigation = props => {
     };
   });
   return (
-    <div ref={element}>
+    <div ref={element} style={{ opacity: 0 }}>
       <Navbar
         color="light"
         light
