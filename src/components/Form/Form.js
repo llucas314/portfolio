@@ -3,6 +3,7 @@ import { Button, Form, FormGroup, Input } from "reactstrap";
 import "./Form.css";
 import emailjs from "emailjs-com";
 import Snackbar from "../Snackbar/Snackbar";
+import { motion } from "framer-motion";
 const ContactForm = props => {
   const [values, setValues] = useState({
     name: "",
@@ -99,7 +100,9 @@ const ContactForm = props => {
           required
         />
       </FormGroup>
-      <Button type="submit">Submit</Button>
+      <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
+        <Button type="submit">Submit</Button>
+      </motion.div>
       <Snackbar isOpen={visible} onDismiss={onDismiss} />
     </Form>
   );

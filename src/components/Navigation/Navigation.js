@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./Navigation.css";
 import { Link } from "react-scroll";
+import { motion } from "framer-motion";
 import {
   Collapse,
   Navbar,
@@ -12,11 +13,19 @@ import {
 
 const Navigation = props => {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggle = () => setIsOpen(!isOpen);
-
+  const element = useRef(null);
+  useEffect(() => {
+    const updateOpacity = () => {
+      element.current.style.opacity = Math.min(window.scrollY / 100, 1);
+    };
+    window.addEventListener("scroll", updateOpacity);
+    return () => {
+      window.removeEventListener("scroll", updateOpacity);
+    };
+  });
   return (
-    <div>
+    <div ref={element} style={{ opacity: 0 }}>
       <Navbar
         color="light"
         light
