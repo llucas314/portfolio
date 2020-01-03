@@ -31,13 +31,17 @@ const ProjectModal = props => {
           <p className="modal__p">{description}</p>
           <p className="modal__p">{lang}</p>
           <div className="modal__buttons d-flex justify-content-center align-items-center">
-            <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
-              <a href={link} target="_blank" rel="noopener noreferrer">
-                <Button className="modal__button btn btn-info m-2">
-                  VISIT
-                </Button>
-              </a>
-            </motion.div>
+            {props.link ? (
+              <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
+                <a href={link} target="_blank" rel="noopener noreferrer">
+                  <Button className="modal__button btn btn-info m-2">
+                    VISIT
+                  </Button>
+                </a>
+              </motion.div>
+            ) : (
+              ""
+            )}
             <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
               <a href={github} target="_blank" rel="noopener noreferrer">
                 <GithubBrands
