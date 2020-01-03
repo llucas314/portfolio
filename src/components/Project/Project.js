@@ -27,6 +27,5 @@ export default function Project(props) {
 }
 Project.defaultProps = {
   img: "/",
-  title: "GOOGLE",
-  link: "https://www.google.com"
+  title: "GOOGLE"
 };
