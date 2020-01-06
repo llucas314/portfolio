@@ -10,6 +10,7 @@ export default function Project(props) {
     >
       <div className="project__modal  p-0  d-flex flex-column justify-content-center align-items-center">
         <h1 className="project__h1">{props.title}</h1>
+        <p className="modal__p">{props.lang}</p>
         <div className="project__links d-flex justify-content-center align-items-center">
           <ProjectModal
             img={props.img}

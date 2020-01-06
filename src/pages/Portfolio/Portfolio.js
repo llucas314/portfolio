@@ -25,7 +25,7 @@ export default function Portfolio() {
               img={isejingu}
               description="Spaced Repeition Learning App to teach people to become developers, and teach developers how to become master developers."
               lang="React.JS | CSS | Node.JS | Express.JS | Neo4j "
-              github="https://github.com/clarknoah/ise-jingu"
+              link="https://ise-jingu.io/"
             />
             <Project
               title="Super Bowl Center"
@@ -96,7 +96,7 @@ export default function Portfolio() {
               title="National Parks"
               img={national}
               description="A guide to National Parks in America."
-              lang="Javascript(React.JS) | CSS"
+              lang="React.JS | CSS"
               link="https://zealous-villani-add409.netlify.com/"
               github="https://github.com/llucas314/National-Parks"
             />

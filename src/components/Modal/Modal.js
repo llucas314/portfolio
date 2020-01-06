@@ -42,16 +42,20 @@ const ProjectModal = props => {
             ) : (
               ""
             )}
-            <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
-              <a href={github} target="_blank" rel="noopener noreferrer">
-                <GithubBrands
-                  width={"32px"}
-                  height={"32px"}
-                  className="m-2"
-                  fill={"#17a2b8"}
-                />
-              </a>
-            </motion.div>
+            {props.github ? (
+              <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
+                <a href={github} target="_blank" rel="noopener noreferrer">
+                  <GithubBrands
+                    width={"32px"}
+                    height={"32px"}
+                    className="m-2"
+                    fill={"#17a2b8"}
+                  />
+                </a>
+              </motion.div>
+            ) : (
+              ""
+            )}
           </div>
         </ModalFooter>
       </Modal>
