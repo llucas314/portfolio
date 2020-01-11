@@ -12,7 +12,9 @@
 
 @media (min-width: 992px) {
   .portfolio {
-    height: 100vh;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
 }
 
