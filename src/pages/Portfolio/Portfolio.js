@@ -32,7 +32,7 @@ export default function Portfolio() {
               img={superBowl}
               description="A place to find information on the NFL’s largest game of the year."
               lang="Mongo DB | Express.JS | React.JS | Node.JS (MERN)"
-              link="https://eager-raman-2f4f42.netlify.com/"
+              link="https://superbowlcenter.netlify.com/"
               github="https://github.com/llucas314/super-bowl-react"
             />
 
@@ -68,7 +68,7 @@ export default function Portfolio() {
               img={doggy}
               description="This site allows you to find compatible dogs by their temperaments or styles."
               lang="Mongo DB | Express.JS | React.JS | Node.JS (MERN)"
-              link="https://practical-roentgen-4bb960.netlify.com/"
+              link="https://doggystyles.netlify.com/"
               github="https://github.com/llucas314/doggy-styles-react"
             />
           </div>
@@ -89,7 +89,7 @@ export default function Portfolio() {
               img={storybook}
               description="A collection of React UI components hosted on storybook."
               lang="React.JS | CSS"
-              link="https://trusting-shirley-06f0a4.netlify.com/"
+              link="https://reactcomponent-library.netlify.com/"
               github="https://github.com/llucas314/component-library"
             />
             <Project
@@ -97,7 +97,7 @@ export default function Portfolio() {
               img={national}
               description="A guide to National Parks in America."
               lang="React.JS | CSS"
-              link="https://zealous-villani-add409.netlify.com/"
+              link="https://nationalparks.netlify.com/"
               github="https://github.com/llucas314/National-Parks"
             />
           </div>
