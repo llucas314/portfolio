@@ -23,7 +23,7 @@ export default function Portfolio() {
             <Project
               title="Ise Jingu"
               img={isejingu}
-              description="Spaced Repeition Learning App to teach people to become developers, and teach developers how to become master developers."
+              description="Spaced Repetition Learning App to teach people to become developers, and teach developers how to become master developers."
               lang="React.JS | CSS | Node.JS | Express.JS | Neo4j "
               link="https://ise-jingu.io/"
             />
