@@ -114,14 +114,21 @@ const ContactForm = props => {
           <Snackbar isOpen={visible} onDismiss={onDismiss} />
         </Form>
       ) : (
-        <ReCAPTCHA
-          sitekey={
-            process.env.NODE_ENV === "production"
-              ? process.env.REACT_APP_CAPTCHA_SITE_KEY
-              : process.env.REACT_APP_CAPTCHA_SITE_KEY_DEV
-          }
-          onChange={handleChange}
-        />
+        <>
+          <p className="contact-form_p">
+            Let's get in contact!
+            <br />
+            I'd love to hear from you.
+          </p>
+          <ReCAPTCHA
+            sitekey={
+              process.env.NODE_ENV === "production"
+                ? process.env.REACT_APP_CAPTCHA_SITE_KEY
+                : process.env.REACT_APP_CAPTCHA_SITE_KEY_DEV
+            }
+            onChange={handleChange}
+          />
+        </>
       )}
     </>
   );

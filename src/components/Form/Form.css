@@ -10,6 +10,11 @@
   height: 150px;
 }
 
+.contact-form_p {
+  color: #66fcf1;
+  text-align: center;
+}
+
 @media (min-width: 768px) {
   .form-group {
     width: 500px;
