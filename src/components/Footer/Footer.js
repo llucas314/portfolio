@@ -2,7 +2,7 @@ import React from "react";
 import "./Footer.css";
 import { GithubBrands, LinkedinInBrands } from "../../Icons";
 import { motion } from "framer-motion";
-import resume from "../../assets/JanResume.pdf";
+import resume from "../../assets/FebResume.pdf";
 
 export default function Footer() {
   return (
